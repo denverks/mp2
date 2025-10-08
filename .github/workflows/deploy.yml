@@ -20,6 +20,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: my-app
 
     steps:
       - name: Checkout
@@ -30,6 +33,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: my-app/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -40,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: my-app/build
   
   deploy:
     needs: build
