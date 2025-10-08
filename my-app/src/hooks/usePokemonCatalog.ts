@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pokemon } from 'pokenode-ts';
 import { getManyPokemonByName, listPokemon } from '../services/pokeApi';
 
