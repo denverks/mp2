@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+

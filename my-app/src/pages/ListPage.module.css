@@ -1,0 +1,87 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input,
+.select {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: #b00020;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.item {}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: box-shadow 0.2s ease;
+  color: inherit;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.stats {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+}
